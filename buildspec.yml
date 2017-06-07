@@ -10,7 +10,7 @@ phases:
       
   build:
     commands:
-      - aws s3 sync --exclude ".git"  ./ s3://$S3BUCKET/github2s3-buildcommand/
+      - aws s3 sync ./ s3://$S3BUCKET/github2s3-buildcommand/  --exclude ".git*"
       
 artifacts:
   files:
