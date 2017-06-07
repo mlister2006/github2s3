@@ -10,7 +10,8 @@ phases:
       
   build:
     commands:
-      - aws s3 sync ./ s3://meh-sam/github2s3-buildcommand/
+      - aws s3 cp buildspec.yml s3://meh-sam/
+      #- aws s3 sync ./ s3://meh-sam/github2s3-buildcommand/
       
 artifacts:
   files:
