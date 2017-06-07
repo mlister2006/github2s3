@@ -1,5 +1,8 @@
 version: 0.1
-
+env:
+  variables:
+    S3BUCKET: meh-sam
+    
 phases:
   install:
     commands:
@@ -7,4 +10,9 @@ phases:
       
   build:
     commands:
-      - aws s3 sync ./ s3://meh-sam/github2s3/
+      - aws s3 sync ./ s3://$S3BUCKET/github2s3-buildcommand/
+      
+artifacts:
+  files:
+    - **/*
+  
