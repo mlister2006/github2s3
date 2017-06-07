@@ -1,0 +1,8 @@
+- Create Codebuild project. (There is already a buildspec.yml) file in this repo.
+- Create an S3 bucket to receive code updates (s3 sync)
+- Test Codebuild/ project.
+- Build codepipeline. 
+   Source: Github repo (wil monitor change to the repo)
+   Builde: Codebuild project created above (with no deployment option after that)
+
+That's it
