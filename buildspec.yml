@@ -1,0 +1,10 @@
+version: 0.1
+
+phases:
+  install:
+    commands:
+      - pip install --upgrade --user awscli
+      
+  build:
+    commands:
+      - aws s3 sync ./ s3://meh-sam/github2s3/
