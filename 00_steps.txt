@@ -5,4 +5,4 @@
    Source: Github repo (wil monitor change to the repo)
    Builde: Codebuild project created above (with no deployment option after that)
 
-That's it
+That's it!
